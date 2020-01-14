@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8"/>
-		<link href="style.css" rel="stylesheet" type="text/css" />
-		<title> MADERA_contact </title>
-	</head>
-	<body>	
-		<img alt="icon" id="arbre" href="index.html" src="./img/logo.png">
+  <head>
+    <meta charset="UTF-8">
+    <title>MADERA</title>
+	 <link rel="stylesheet" href="stylegrid.css">
+  </head>
+  <body>
+  
+	<div class="wrapper2">
+	<header class="box header"><img alt="icon" id="arbre" href="index.html" src="./img/logo.png"></header>
 
+
+	<aside class="box sidebar">
 		<ul id="menu">	
 				<li><a href="index.html"> Accueil </a></li> 
 				<li><a href="entreprise.html"> L'entreprise </a></li>
@@ -15,33 +19,45 @@
 				<li><a href="projet.html"> Projet </a></li> 
 				<li><a href="contact.html"> Contact </a></li> 
 		</ul>
+	</aside>
 
-		<form action="contact.html" method="post" id="formulaire"> 
+		<section class="box contacter">
+			<h2 id="titre_contact"> Pour nous contacter : </h2>
+			<p> <h4>tel :</h4> 02 46 97 00 11 </p>
+			<p> <h4> email :</h4> madera_company@madera.org </p>
+			<p> <h4>adresse du lieu :</h4> 55 rue des développeurs 44000 NANTES </p>
+		</section>
+		
+		<form class="box form" action="contact.html" method="post" id="formulaire"> 
 			<h1> Contactez-nous </h1>
-				<label>Nom : </label>
+			
 				<input type="text" name="nom" placeholder="NOM" required/>
 			
-				<label>Prénom : </label>
+
 				<input type="text" name="prenom" placeholder="Prénom" required/>
 			
-				<label>Email : </label>
+			
 				<input type="email" name="email" placeholder="exemple@gmail.com" required/>
 			
-				<label>Objet : </label>
+			
 				<input type="text" name="objet" placeholder="informations" required/>
 			
-				<label>Message : </label>
-				<input type="textarea" name="message" placeholder="Bonjour, je vous envoie ce mail dans le but ..." required/>
+				
+				<textarea type="textarea" name="message" placeholder="Bonjour, je vous envoie ce mail dans le but ..." required></textarea>
 			
 				<br>
 				<input type="submit" name="bouton" value="VALIDER">
 			
 			</form>
 		
-		
+	<footer class="box footer">
+		<p>Pour nous contacter : </p>
+		<p>email : madera_company@madera.org</p>
+		<p>tel : 02 46 97 00 11</p>
+	</footer>
 			
 
-
+	</div>
 		
 	</body>
 </html>

@@ -32,9 +32,13 @@
 
     .footer {
         grid-area: footer;
+		font-weight:bold;
+		background-color:lightgreen;
+		color:white;
+		padding-left:3%;
     }
 
-    .wrapper {
+    .wrapper, .wrapper2 {
         background-color: #fff;
         color: #444;
     }
@@ -78,7 +82,7 @@
 	  background-color: white;
 	}
 	
-	#imgarticle {
+	.imgarticle {
 		width:100%;
 	}
 	
@@ -109,3 +113,43 @@ li :hover {
 	width:100%;
 	
 }
+
+
+/*contact*/
+#formulaire {
+
+	border:3px solid green;
+	border-radius:20px;
+	text-align:center;	
+		color:green;
+}
+
+
+input, textarea{
+font-size:16px;
+border-radius:5px;
+text-align:center;
+width:60%;
+padding:1%;
+margin:2%;
+margin-right:4%;
+}
+
+.form {
+	grid-area: form;
+	background-color:white;
+}
+
+.contacter {
+	grid-area: contacter;
+}
+
+.wrapper2 {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header   header   header   header"
+     "sidebar   sidebar   sidebar   sidebar"
+     "contacter   form   form   form "
+     "footer   footer   footer   footer"
+  }
