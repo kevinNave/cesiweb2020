@@ -1,14 +1,12 @@
- /*convertir en unité adaptative
-  pour les tailles de police selon 
-  la résolution de l'écran :
-  html { 
+ html { 
      font-size:62.5%;
- }*/
+ }
  
  body {
 	  background-color:white;
 	font-family:Century Gothic;
     text-align:justify;
+    font-size:2rem;
 	}
 
 /*grid page*/
@@ -38,7 +36,7 @@
         grid-area: wrapper_contact;
     }
 
-    .wrapper, .wrapper2, .wrapper3 {
+    .wrapper, .wrapper2, .wrapper3, .wrapper4 {
         background-color: #fff;
         color: #444;
     }
@@ -83,14 +81,27 @@
      "footer"
   }
 
+  .wrapper4 {
+    position: absolute;
+    left : 0;
+    top : 0;
+    bottom: 0;
+    display: grid;
+    grid-template-areas:
+     "sidebar"
+     "back"
+     "wrapper_content_cctp"
+     "footer"
+  }
+
   .wrapper_contact {
     text-align: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 20%;
     margin-right: 20%;
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 1rem;
     grid-template-areas:
     "contacter"
     "form" 
@@ -140,12 +151,12 @@
 
 
   .wrapper_content {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 15%;
     margin-right: 15%;
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 1rem;
     grid-template-areas:
      "content_presentation img_presentation"
      "img1 content"
@@ -161,7 +172,7 @@
        position: absolute;
        left:0; 
        top:0;
-       width:265px;
+       width:25rem;
     }
 
     #background {   
@@ -183,7 +194,7 @@
 	#menu {
 	display:inline-block;
 	padding:1%;
-	font-size:25px;	
+	font-size:2.5rem;	
 	text-align:center;
 	width:98%;
 
@@ -229,7 +240,6 @@ li :hover {
 .form {
     grid-area: form;
     border: 3px solid green;
-    border-radius: 5%;
 }
 
 .contacter {
@@ -243,7 +253,7 @@ li :hover {
 }
 
 input, textarea{
-    font-size:24px;
+    font-size:2.4rem;
     border-radius:5px;
     text-align:center;
     margin-bottom: 2%;
@@ -252,7 +262,7 @@ input, textarea{
     }
    
 textarea {
-    font-size: 18px;
+    font-size: 1.8rem;
     }
 
 #inputBouton {
@@ -276,7 +286,7 @@ textarea {
 #menu_produit {
     display:inline-block;
 	padding:1%;
-	font-size:25px;	
+	font-size:2.5rem;	
 	text-align:center;
 	width:98%;
 }
@@ -352,12 +362,12 @@ textarea {
 
 .wrapper_content_produit {
     text-align:center;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 20%;
     margin-right: 20%;
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 1rem;
     grid-template-areas:
     "title_tertiaire   title_scolaire"
     "img_tertiaire   img_scolaire"
@@ -372,6 +382,7 @@ textarea {
     width:70%;
     opacity: 60%;
     transition-duration: 1s;
+    border-radius: 10rem;;
   }
 
   .back_produit:hover {
@@ -382,4 +393,65 @@ textarea {
   .title {
       font-weight: bold;
       margin-bottom: 0;
+  }
+
+  /*page cctp*/
+
+  .wrapper_content_cctp {
+      grid-area: wrapper_content_cctp;
+      display: grid;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      grid-gap: 1rem;
+      grid-template-areas:
+      "content1_cctp"
+      "content2_cctp" 
+      "content3_cctp"
+      "content4_cctp"
+      "content5_cctp"
+      "img_footer"
+  }
+
+
+  .content1_cctp {
+      grid-area: content1_cctp;
+      background-color:white;
+      padding-left: 35rem;
+      padding-right: 35rem;
+      border
+  }
+
+  .content2_cctp {
+      grid-area: content2_cctp;
+      background-color: #d7fce1;
+      padding-left: 35rem;
+      padding-right: 35rem;
+      transition-duration: 1s;
+  }
+
+  .content3_cctp {
+      grid-area: content3_cctp;
+      background-color:white;
+      padding-left: 35rem;
+      padding-right: 35rem;
+  }
+
+  .content4_cctp {
+      grid-area: content4_cctp;
+      background-color:#d7fce1;
+      padding-left: 35rem;
+      padding-right: 35rem;
+      transition-duration: 1s;
+  }
+
+  .content5_cctp {
+      grid-area: content5_cctp;
+      background-color:white;
+      padding-left: 35rem;
+      padding-right: 35rem;
+  }
+
+  .content2_cctp:hover, .content4_cctp:hover {
+        background-color:#b3f5bc;
+        transition-duration: 1s;
   }
