@@ -1,12 +1,13 @@
  html { 
      font-size:62.5%;
  }
+
  
  body {
 	  background-color:white;
 	font-family:Century Gothic;
     text-align:justify;
-    font-size:2rem;
+    font-size:1.8rem;
 	}
 
 /*grid page*/
@@ -168,11 +169,15 @@
 
 
 /* Menu */
+	article h1 {
+		border-bottom : 2px solid green;
+	}
+
     #entete {
        position: absolute;
        left:0; 
        top:0;
-       width:25rem;
+       width:15%;
     }
 
     #background {   
@@ -222,7 +227,8 @@ li :hover {
 }
 
 #article_presentation, #article1, #article2, #article3, #article_fin_presentation {
-    margin-left: 10%;
+    margin-left: 5%;
+	margin-right:5%;
 }
 
 .box {
@@ -286,7 +292,7 @@ textarea {
 #menu_produit {
     display:inline-block;
 	padding:1%;
-	font-size:2.5rem;	
+	font-size:1.5rem;	
 	text-align:center;
 	width:98%;
 }
@@ -369,13 +375,11 @@ textarea {
     display: grid;
     grid-gap: 1rem;
     grid-template-areas:
-    "title_tertiaire   title_scolaire"
-    "img_tertiaire   img_scolaire"
-    "title_association   title_bailleur"
-    "img_association   img_bailleur"
-    "title_location   title_agricole"
-    "img_location   img_agricole"
-    "img_footer  img_footer"
+    "title_tertiaire   title_scolaire   title_association"
+    "img_tertiaire   img_scolaire   img_association"
+    "title_bailleur   title_location   title_agricole"
+    "img_bailleur   img_location   img_agricole"
+    "img_footer  img_footer   img_footer"
   }
 
   .back_produit {
@@ -393,6 +397,7 @@ textarea {
   .title {
       font-weight: bold;
       margin-bottom: 0;
+	  font-size:1.5rem;
   }
 
   /*page cctp*/
@@ -416,42 +421,42 @@ textarea {
   .content1_cctp {
       grid-area: content1_cctp;
       background-color:white;
-      padding-left: 35rem;
-      padding-right: 35rem;
-      border
+      padding-left: 15rem;
+      padding-right: 15rem;
   }
 
   .content2_cctp {
       grid-area: content2_cctp;
       background-color: #d7fce1;
-      padding-left: 35rem;
-      padding-right: 35rem;
+      padding-left: 15rem;
+      padding-right: 15rem;
       transition-duration: 1s;
   }
 
   .content3_cctp {
       grid-area: content3_cctp;
       background-color:white;
-      padding-left: 35rem;
-      padding-right: 35rem;
+      padding-left: 15rem;
+      padding-right: 15rem;
   }
 
   .content4_cctp {
       grid-area: content4_cctp;
       background-color:#d7fce1;
-      padding-left: 35rem;
-      padding-right: 35rem;
+      padding-left: 15rem;
+      padding-right: 15rem;
       transition-duration: 1s;
   }
 
   .content5_cctp {
       grid-area: content5_cctp;
       background-color:white;
-      padding-left: 35rem;
-      padding-right: 35rem;
+      padding-left: 15rem;
+      padding-right: 15rem;
   }
 
   .content2_cctp:hover, .content4_cctp:hover {
         background-color:#b3f5bc;
         transition-duration: 1s;
   }
+  

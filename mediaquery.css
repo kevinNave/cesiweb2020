@@ -1,0 +1,233 @@
+
+/*media tablets*/
+@media (min-width: 701px) and (max-width: 1200px) {
+	
+/*logo accueil*/
+    #entete {
+      position:absolute;
+	  margin-left:30%;
+	  width:40%;
+    }
+
+/*menu*/	
+	.sidebar {
+		margin-top: 15%;
+	}
+	
+/*tires*/
+h2 {
+	text-align: center;
+}
+
+/*page accueil*/
+    .wrapper_content {
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-template-areas:
+	 "content_presentation"
+	 "img_presentation"
+	 "content"
+	 "img1"
+     "content2"
+	 "img2"
+	 "content3"
+	 "img3"
+     "content_fin_presentation"
+	 "img_fin_presentation"
+     "img_footer"
+  }
+  
+  .imgarticle {
+	  border-radius:30rem;
+	  width:50%;
+	  margin-left: 25%;
+}
+
+	#img_presentation {
+		border-radius: 0;
+	}
+	
+/*page produits*/
+.wrapper_content_produit {
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-areas:
+    "title_tertiaire   title_scolaire"
+    "img_tertiaire   img_scolaire"
+	"title_association   title_bailleur"
+	"img_association   img_bailleur"
+    "title_location   title_agricole"
+    "img_location   img_agricole"
+    "img_footer  img_footer"
+  }
+  
+  #menu_produit {
+	  font-size: 1.3rem;
+  }
+
+/*page cctp*/	
+  
+  body {
+	  font-size: 1.5rem;
+  }
+  
+  .content1_cctp, content2_cctp, content3_cctp, content4_cctp, content5_cctp {
+
+  }
+	
+	h1{
+		text-align: center;
+	}
+	
+/*page contact*/
+input {
+	font-size:2rem;
+}
+
+textarea {
+	font-size: 1.3rem;
+}
+
+}
+
+
+
+
+
+
+/*media mobile*/
+@media (min-width: 300px) and (max-width: 700px) {
+	
+	body {
+	font-size: 1rem;
+}	
+
+	#entete {
+      position:absolute;
+	  margin-left:25%;
+	  width:50%;
+    }
+
+	
+	.sidebar {
+		margin-top: 20%;
+	}
+
+	#menu li {
+	display:block;
+	margin : 1%;
+	font-size: 1.8rem;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	padding-bottom:1rem;
+	
+	}
+	
+	#menu li a{
+		color:green;
+	}
+	
+
+
+/*page accueil*/
+    .wrapper_content {
+    margin-left: 2%;
+    margin-right: 2%;
+    grid-template-areas:
+	 "content_presentation"
+	 "img_presentation"
+	 "content"
+	 "img1"
+     "content2"
+	 "img2"
+	 "content3"
+	 "img3"
+     "content_fin_presentation"
+	 "img_fin_presentation"
+     "img_footer"
+  }
+  
+  .imgarticle {
+	  border : 3px double green;
+	  width:50%;
+	  margin-left: 25%;
+}
+
+	#menu_produit {
+		display: none;
+	}
+	
+/*page produits*/
+.wrapper_content_produit {
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-areas:
+    "title_tertiaire"
+    "img_tertiaire"
+	"title_scolaire"
+	"img_scolaire"
+	"title_association"
+	"img_association"
+	"title_bailleur"
+	"img_bailleur"
+    "title_location"
+    "img_location"
+	"title_agricole"
+	"img_agricole"
+    "img_footer"
+  }
+  
+  .title, .img_footer {
+	  padding-top: 3rem;	
+  }
+  
+  #menu_produit {
+	  font-size: 1.3rem;
+  }
+  
+  .back_produit {
+	  opacity: 100%;
+  }
+  
+  
+
+/*page cctp*/	
+  
+  
+  .content1_cctp, .content2_cctp, .content3_cctp, .content4_cctp, .content5_cctp {
+	padding-left: 1rem;
+	padding-right:1rem;
+	
+  }
+  
+  .content2_cctp, .content4_cctp {
+	  background-color: #b3f5bc;
+  }
+	
+	h1{
+		text-align: center;
+	}
+	
+/*page contact*/
+
+
+input, textarea, .contacter, .form {
+	font-size:1rem;
+}
+
+input, textarea {
+	border-radius: 0;
+	width: 60%;
+	
+}
+
+.wrapper_contact {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#inputBouton {
+	background-color: green;
+    color: white;
+}
+  
