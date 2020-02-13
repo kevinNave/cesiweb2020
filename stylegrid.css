@@ -1,32 +1,104 @@
+ /*corps*/
  html { 
      font-size:62.5%;
  }
 
- 
  body {
 	  background-color:white;
 	font-family:Century Gothic;
     text-align:justify;
     font-size:1.8rem;
 	}
+	
 
-/*grid page*/
+/* Menu */
+	article h1 {
+		border-bottom : 2px solid green;
+	}
 
-	.sidebar {
-        grid-area: sidebar;
+    #entete {
+       position: absolute;
+       left:0; 
+       top:0;
+       width:15%;
     }
 
-    .sidebar_produit {
-        grid-area: sidebar_produit;
-        background-color: lightseagreen;
+    #background {   
+        width:100%;
+        opacity: 80%;
+        transition-duration: 1s;
+    }
+
+    #background:hover {
+        opacity: 100%;
+        transition-duration: 1s;
+    }
+	
+	.sidebar {
+		padding:0;
+		background-color:white;
+	}
+	
+	#menu {
+	display:inline-block;
+	padding:1%;
+	font-size:2.5rem;	
+	text-align:center;
+	width:98%;
+
+}
+
+#menu li {
+	display:inline;
+	margin : 1%;
+}
+
+li a {
+	text-decoration:none;
+    color:green;
+}
+
+li :hover {
+    color: black;
+}
+
+/*svg*/
+
+.svg_cont{
+	width:1rem;
+	height:1rem;
+	margin-right: 2rem;
+	border: 1px solid white;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	background-color: white;
+}
+
+.svg_alone {
+	width:2rem;
+	height:2rem;
+	margin : 1rem;
+	border: 1px solid white;
+	padding: 1rem;
+	border-radius: 1rem;
+	background-color: white;
+}
+
+
+/*declaration des composants grid*/
+
+/*grid wrapper ensemble de page*/
+	.sidebar {
+        grid-area: sidebar;
     }
 
     .back {
 	    grid-area: back;
 	}
-
-    .wrapper_content {
-        grid-area: wrapper_content;
+	
+	.sidebar_produit {
+        grid-area: sidebar_produit;
+        background-color: lightseagreen;
     }
 
     .footer {
@@ -36,11 +108,58 @@
     .wrapper_contact {
         grid-area: wrapper_contact;
     }
+	
+	 /*grid contenu accueil*/
+    .wrapper_content {
+        grid-area: wrapper_content;
+    }	 
+	 
+  .content_presentation {
+      grid-area: content_presentation;
+  }
 
-    .wrapper, .wrapper2, .wrapper3, .wrapper4 {
-        background-color: #fff;
-        color: #444;
-    }
+ .content {
+     grid-area: content;
+ }
+
+ .content2 {
+     grid-area: content2;
+ }
+
+ .content3 {
+     grid-area: content3;
+ }
+
+ .content_fin_presentation {
+     grid-area: content_fin_presentation;
+ }
+ 
+ .content_presentation, .content1, .content2, .content3, .content_fin_presentation, #img_presentation, #img1, #img2, #img3, #img_fin_presentation {
+	 margin-bottom: 10rem;
+ }
+
+ #img_presentation {
+     grid-area: img_presentation;
+ }
+
+ #img1 {
+     grid-area: img1;
+ }
+
+ #img2 {
+     grid-area: img2;
+ }
+
+ #img3 {
+     grid-area: img3;
+ }
+
+ #img_fin_presentation {
+     grid-area: img_fin_presentation;
+	 margin-top: 10rem;
+ }
+
+/*wrappers pour chaque page*/
 
   .wrapper {
     position: absolute;
@@ -95,6 +214,12 @@
      "footer"
   }
 
+.wrapper, .wrapper2, .wrapper3, .wrapper4 {
+        background-color: #fff;
+        color: #444;
+    }
+
+/*wrappers de contenu*/
   .wrapper_contact {
     text-align: center;
     margin-top: 2rem;
@@ -108,48 +233,6 @@
     "form" 
     "img_footer"
   }
-
- /*grid contenu*/
-  .content_presentation {
-      grid-area: content_presentation;
-  }
-
- .content {
-     grid-area: content;
- }
-
- .content2 {
-     grid-area: content2;
- }
-
- .content3 {
-     grid-area: content3;
- }
-
- .content_fin_presentation {
-     grid-area: content_fin_presentation;
- }
-
- #img_presentation {
-     grid-area: img_presentation;
- }
-
- #img1 {
-     grid-area: img1;
- }
-
- #img2 {
-     grid-area: img2;
- }
-
- #img3 {
-     grid-area: img3;
- }
-
- #img_fin_presentation {
-     grid-area: img_fin_presentation;
- }
-
 
   .wrapper_content {
     margin-top: 2rem;
@@ -168,58 +251,8 @@
   }
 
 
-/* Menu */
-	article h1 {
-		border-bottom : 2px solid green;
-	}
 
-    #entete {
-       position: absolute;
-       left:0; 
-       top:0;
-       width:15%;
-    }
-
-    #background {   
-        width:100%;
-        opacity: 80%;
-        transition-duration: 1s;
-    }
-
-    #background:hover {
-        opacity: 100%;
-        transition-duration: 1s;
-    }
-	
-	.sidebar {
-		padding:0;
-		background-color:white;
-	}
-	
-	#menu {
-	display:inline-block;
-	padding:1%;
-	font-size:2.5rem;	
-	text-align:center;
-	width:98%;
-
-}
-
-#menu li {
-	display:inline;
-	margin : 1%;
-}
-
-li a {
-	text-decoration:none;
-    color:green;
-}
-
-li :hover {
-    color: black;
-}
-
-/*contenu*/
+/*contenu acueil css*/
 
 .imgarticle {
    width: 80%;
@@ -231,18 +264,7 @@ li :hover {
 	margin-right:5%;
 }
 
-.box {
-    
-}
-
-/* Pied de page */
-.footer {
-    background-color:green;
-    color:white;
-    width:100%;
-    text-align: center;
-}
-
+/*page contact*/
 .form {
     grid-area: form;
     border: 3px solid green;
@@ -251,11 +273,6 @@ li :hover {
 .contacter {
     grid-area: contacter;
     border : 3px solid green;   
-}
-
-.img_footer {
-    grid-area: img_footer;
-    width: 100%;
 }
 
 input, textarea{
@@ -287,6 +304,71 @@ textarea {
     transition-duration: 0.5s;
 }
 
+/* Footer */
+.footer {
+    background-color:#22780f;
+    color:white;
+    width:100%;
+    text-align: center;
+	font-size: 1.2rem;
+}
+
+.contactUs {
+	grid-area: contactUs;
+	padding-bottom:2rem;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	margin-top: 2rem;
+	text-align:left;
+	padding-left: 20%;
+}
+
+.title_contactUs {
+
+	padding-left:25%;
+}
+
+.contactUs a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.1rem;	
+}
+
+.compatibility {
+	grid-area: compatibility;
+	margin-top: 2rem;
+}
+
+.followUs {
+	grid-area: followUs;
+	margin-top: 2rem;
+}
+
+.copyright {
+	grid-area: copyright;
+	background-color: darkgreen;
+	font-size: 1rem;
+	margin-top:2rem;
+}
+
+
+
+.footer {
+    text-align:center;
+    display: grid;
+	grid-template-columns: 30% 40% 30%;
+    grid-template-areas:
+	"compatibility   contactUs   followUs"
+	"copyright   copyright   copyright"
+    
+  }
+
+
+.img_footer {
+    grid-area: img_footer;
+    width: 100%;
+}
+
 /*page produits*/
 
 #menu_produit {
@@ -313,6 +395,8 @@ textarea {
     color:black;
     transition-duration: 0.5s;
 }
+
+/*composants grid produits*/
 
 #wrapper_content_produit {
     grid-area: wrapper_content_produit; 
@@ -423,6 +507,7 @@ textarea {
       background-color:white;
       padding-left: 15rem;
       padding-right: 15rem;
+	  transition-duration: 1s;
   }
 
   .content2_cctp {
@@ -438,6 +523,7 @@ textarea {
       background-color:white;
       padding-left: 15rem;
       padding-right: 15rem;
+	  transition-duration: 1s;
   }
 
   .content4_cctp {
@@ -453,9 +539,10 @@ textarea {
       background-color:white;
       padding-left: 15rem;
       padding-right: 15rem;
+	  transition-duration: 1s;
   }
 
-  .content2_cctp:hover, .content4_cctp:hover {
+  .content1_cctp:hover, .content2_cctp:hover, .content3_cctp:hover, .content4_cctp:hover, .content5_cctp:hover {
         background-color:#b3f5bc;
         transition-duration: 1s;
   }
