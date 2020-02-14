@@ -554,22 +554,28 @@ textarea {
   bottom: 25rem; 
   right: 3rem; 
   z-index: 99; 
-  border: none; 
+  border: 1px solid black; 
   outline: none; 
   background-color: green; 
   color: white; 
   cursor: pointer; 
-  padding: 15px; 
-  border-radius: 10rem; 
+  border-radius: 1rem; 
   font-size: 1.5rem; 
   transition-duration: 1s;
 }
 
 #myBtn:hover {
 	 transition-duration: 1s;
-  color: black; 
+  background: darkgreen; 
 }
 
 .topFunction {
 	scroll-behavior: smooth;
+}
+
+.svg_scroll {
+	text-align:center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 5rem;
 }

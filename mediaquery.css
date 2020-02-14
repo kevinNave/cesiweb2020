@@ -334,6 +334,11 @@ input, textarea {
   right: 1rem;
   font-size:0rem;
   background-color: none;
+  border: none;
+}
+
+.svg_scroll {
+	display:none;
 }
 
 }
