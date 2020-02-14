@@ -6,6 +6,25 @@
 	 <link rel="stylesheet" href="stylegrid.css">
 	 <link rel="stylesheet" href="mediaquery.css">
   </head>
+  
+ <script type="text/javascript" src="./js/main.js">// REGISTER ON LOAD
+window.addEventListener('load', e => {
+  if (!('serviceWorker' in navigator)) {
+      console.log('Service worker not supported');
+      return;
+  }
+  navigator.serviceWorker.register('service-worker.js')
+      .then(function () {
+          console.log('Service worker registered');
+      })
+      .catch(function (error) {
+          console.log('Service worker registration failed:',
+              error);
+      });
+});
+
+</script>
+
   <body>
   
 	<div class="wrapper">
@@ -87,29 +106,53 @@
               <img class="img_footer" alt="image" src="./img/produire.jpg">
 </aside>
 	
+	  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+	  
+	  <script type="text/javascript">
+	  //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+	  </script>
+	
 	<footer class="footer">
 	<article class="contactUs">
 		<h3 class="title_contactUs">Contactez-nous </h3>
-		<a class="cont_text" href=""><img class="svg_cont" srcset="./svg/map-marker-alt-solid.svg"> Rue Enzo Ferrari 85000 La Roche sur Yon </a><br>
-		<a class="cont_text" href=""><img class="svg_cont" srcset="./svg/envelope-regular.svg">  madera_company@madera.org </a><br>
-		<a class="cont_text" href=""><img class="svg_cont" srcset="./svg/globe-europe-solid.svg"> http://kevin-nave.ril.nte.ovh </a><br>
-		<a class="cont_text" href=""><img class="svg_cont" srcset="./svg/phone-alt-solid.svg">  02 46 97 00 11 </a>
+		<a class="cont_text" href=""><img class="svg_cont" src="./svg/map-marker-alt-solid.svg"> Rue Enzo Ferrari 85000 La Roche sur Yon </a><br>
+		<a class="cont_text" href=""><img class="svg_cont" src="./svg/envelope-regular.svg">  madera_company@madera.org </a><br>
+		<a class="cont_text" href=""><img class="svg_cont" src="./svg/globe-europe-solid.svg"> http://kevin-nave.ril.nte.ovh </a><br>
+		<a class="cont_text" href=""><img class="svg_cont" src="./svg/phone-alt-solid.svg">  02 46 97 00 11 </a>
 
 	</article>
 	
 	<article class="compatibility">
 	<h3 class="title_compatibility"> Compatibilité </h3>
-			<img class="svg_alone" srcset="./svg/desktop-solid.svg">
-			<img class="svg_alone" srcset="./svg/laptop-solid.svg">
-			<img class="svg_alone" srcset="./svg/tablet-alt-solid.svg">
-			<img class="svg_alone" srcset="./svg/mobile-alt-solid.svg">
+			<img class="svg_alone" src="./svg/desktop-solid.svg">
+			<img class="svg_alone" src="./svg/laptop-solid.svg">
+			<img class="svg_alone" src="./svg/tablet-alt-solid.svg">
+			<img class="svg_alone" src="./svg/mobile-alt-solid.svg">
 	</article>
 	
 	<article class="followUs">
 	<h3 class="title_followUs"> Suivez-nous</h3>
-			<a href=""><img class="svg_alone" srcset="./svg/facebook-brands.svg"></a>
-			<a href=""><img class="svg_alone" srcset="./svg/twitter-brands.svg"></a>
-			<a href=""><img class="svg_alone" srcset="./svg/linkedin-in-brands.svg"></a>	
+			<a href=""><img class="svg_alone" src="./svg/facebook-brands.svg"></a>
+			<a href=""><img class="svg_alone" src="./svg/twitter-brands.svg"></a>
+			<a href=""><img class="svg_alone" src="./svg/linkedin-in-brands.svg"></a>	
 	</article>
 	
 	<article class="copyright">

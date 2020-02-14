@@ -2,6 +2,13 @@
 /*media tablets*/
 @media (min-width: 701px) and (max-width: 1200px) {
 	
+#myBtn {
+		display:none;
+	 bottom: 25rem; 
+  right: 1rem;
+  font-size:0.8rem;
+}
+	
 /*logo accueil*/
     #entete {
       position:absolute;
@@ -320,5 +327,13 @@ input, textarea {
 	"copyright  copyright  copyright"   
     
   }
+  
+  #myBtn {
+	display:none;
+	 bottom: 1rem; 
+  right: 1rem;
+  font-size:0rem;
+  background-color: none;
+}
 
 }

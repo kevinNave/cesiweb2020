@@ -1,6 +1,7 @@
  /*corps*/
  html { 
      font-size:62.5%;
+	 scroll-behavior: smooth;
  }
 
  body {
@@ -547,3 +548,28 @@ textarea {
         transition-duration: 1s;
   }
   
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 25rem; 
+  right: 3rem; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: green; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10rem; 
+  font-size: 1.5rem; 
+  transition-duration: 1s;
+}
+
+#myBtn:hover {
+	 transition-duration: 1s;
+  color: black; 
+}
+
+.topFunction {
+	scroll-behavior: smooth;
+}
